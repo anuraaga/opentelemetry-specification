@@ -5,7 +5,6 @@ groups:
       attributes:
         - id: system
           type: string
-          required: always
           brief: 'A string identifying the remoting system.'
           examples: ["grpc", "java_rmi", "wcf"]
         - id: service

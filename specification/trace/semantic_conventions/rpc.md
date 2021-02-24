@@ -54,7 +54,7 @@ Examples of span names:
 <!-- semconv rpc -->
 | Attribute  | Type | Description  | Examples  | Required |
 |---|---|---|---|---|
-| `rpc.system` | string | A string identifying the remoting system. | `grpc`; `java_rmi`; `wcf` | Yes |
+| `rpc.system` | string | A string identifying the remoting system. | `grpc`; `java_rmi`; `wcf` | No |
 | `rpc.service` | string | The full name of the service being called, including its package name, if applicable. | `myservice.EchoService` | No, but recommended |
 | `rpc.method` | string | The name of the method being called, must be equal to the $method part in the span name. | `exampleMethod` | No, but recommended |
 | [`net.peer.ip`](span-general.md) | string | Remote address of the peer (dotted decimal for IPv4 or [RFC5952](https://tools.ietf.org/html/rfc5952) for IPv6) | `127.0.0.1` | See below |
